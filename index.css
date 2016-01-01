@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: HelveticaNeue-UltraLight, 'Helvetica Neue UltraLight', 'Yantramanav', Arial, Helvetica, sans-serif !important;
+    font-family: HelveticaNeue-UltraLight, 'Helvetica Neue UltraLight', 'Helvetica Neue', 'Yantramanav', Arial, Helvetica, sans-serif !important;
     font-style: normal;
     font-weight:100;
     font-stretch:normal;
@@ -239,6 +239,7 @@ path#path3412:hover {
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
+    flex-wrap: nowrap;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -330,7 +331,7 @@ path#path3412:hover {
 }
 
 .flex-item {
-    padding: 0 10vw;
+    padding: 0 5vw;
     flex: 1;
 }
 
@@ -341,7 +342,14 @@ path#path3412:hover {
 
 .flex-item.info {
     flex: 2;
-    font-size: 2vw;
+    font-size: 2em;
+}
+
+.flex-item#about_image {
+    width: 25vw;
+    height: 100%;
+    padding-left: 10vw;
+    flex: 2;
 }
 
 #portfolio .body .flex-item {
@@ -382,7 +390,7 @@ ul#header_links li:after {
 
 #about_img {
     height: 100%;
-    width: 25vw;
+    width: 100%;
 }
 
 #loading {
