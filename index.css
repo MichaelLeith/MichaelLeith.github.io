@@ -347,7 +347,7 @@ path#path3412:hover {
 
 .flex-item#about_image {
     width: 25vw;
-    height: 100%;
+    /*height: 100%;*/
     padding-right: 0vw;
     flex: 2;
 }
@@ -357,7 +357,20 @@ path#path3412:hover {
 }
 
 #portfolio .body .flex-item.portfolio_image {
-    padding: 0 0 0 5vw;
+    margin: 0 0 0 5vw;
+    width: 100%;
+    display: block;
+    height: auto;
+    position: relative;
+    padding: 100% 0 0 0;
+}
+
+.portfolio_image svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 p {
@@ -393,8 +406,8 @@ ul#header_links li:after {
 }
 
 #about_img {
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
 }
 
 #loading {
